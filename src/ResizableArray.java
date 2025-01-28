@@ -31,6 +31,10 @@ public class ResizableArray<T> {
         return array[index];
     }
 
+    public T remove() {
+        return remove(0);
+    }
+
     public T remove(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index out of bounds: " + index);
